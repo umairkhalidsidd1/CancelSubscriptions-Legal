@@ -3,159 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service · CancelSubscriptions</title>
-<meta name="description" content="The ground rules for using CancelSubscriptions.">
+<title>Terms of Service | CancelSubscriptions</title>
+<meta name="description" content="The terms for using CancelSubscriptions.">
 <style>
-  /* Obsidian & Champagne — mirrors src/theme/tokens.ts so the legal pages look like the app. */
-  :root{
-    --canvas:#0C0E13; --surface:rgba(255,255,255,.05); --line:rgba(255,255,255,.085);
-    --line2:rgba(255,255,255,.14); --ink:#F2EFE7; --ink2:#ADA99C; --muted:#77736A;
-    --gold:#E6C77C; --gold-deep:#B9933F; --gold-glow:rgba(230,199,124,.26);
-    --warn:#E4B45C; --warn-soft:rgba(228,180,92,.10);
-    --mono:'SF Mono',Menlo,'Cascadia Mono',monospace;
-    --sans:-apple-system,'SF Pro Display','Segoe UI',Roboto,'Helvetica Neue',sans-serif;
-  }
-  @media (prefers-color-scheme: light){
-    :root{
-      --canvas:#EDEEEA; --surface:#FFFFFF; --line:rgba(22,19,10,.09); --line2:rgba(22,19,10,.15);
-      --ink:#191712; --ink2:#585449; --muted:#918D82;
-      --gold:#8E6E28; --gold-deep:#6C531D; --gold-glow:rgba(142,110,40,.14);
-      --warn:#A9791A; --warn-soft:rgba(169,121,26,.08);
-    }
+  :root{--bg:#FFFFFF;--ink:#16150F;--ink2:#4A4740;--muted:#8A867C;--line:#E7E5DF;--accent:#8E6E28}
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0C0E13;--ink:#F2EFE7;--ink2:#B5B1A6;--muted:#7C786E;--line:#22252C;--accent:#E6C77C}
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--canvas);color:var(--ink);font-family:var(--sans);line-height:1.65;
-    -webkit-font-smoothing:antialiased}
-  .wrap{max-width:720px;margin:0 auto;padding:0 22px 90px}
-
-  header{padding:54px 0 26px;border-bottom:1px solid var(--line);margin-bottom:34px}
-  .brand{display:flex;align-items:center;gap:12px;margin-bottom:26px}
-  .mark{width:36px;height:36px;border-radius:10px;flex:none;
-    background:linear-gradient(135deg,#FBEBAE,#D3A03E 62%,#B9862E);
-    display:grid;place-items:center;color:#2a1d04;font-weight:800;font-size:16px;
-    box-shadow:0 4px 18px var(--gold-glow)}
-  .brand b{font-size:15px;letter-spacing:-.2px}
-  h1{font-size:34px;font-weight:800;letter-spacing:-.8px;line-height:1.1}
-  .updated{font-family:var(--mono);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;
-    color:var(--muted);margin-top:12px}
-
-  .lede{background:var(--warn-soft);border:1px solid var(--line2);border-left:2px solid var(--warn);
-    border-radius:12px;padding:16px 18px;margin-bottom:34px}
-  .lede p{color:var(--ink);font-size:15px}
-  .lede b{color:var(--warn)}
-
-  h2{font-size:19px;font-weight:700;letter-spacing:-.3px;margin:34px 0 10px;color:var(--ink)}
-  h2 .n{font-family:var(--mono);font-size:12px;color:var(--gold);margin-right:9px;font-weight:400}
-  p{color:var(--ink2);font-size:14.5px;margin-bottom:10px}
-  a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-glow)}
-  a:hover{border-bottom-color:var(--gold)}
-  ul{margin:8px 0 12px 0;padding-left:0;list-style:none}
-  li{color:var(--ink2);font-size:14.5px;margin-bottom:7px;padding-left:20px;position:relative}
-  li::before{content:'';position:absolute;left:6px;top:9px;width:4px;height:4px;border-radius:50%;
-    background:var(--gold)}
-  strong{color:var(--ink);font-weight:600}
-
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
-    padding:15px 17px;margin:14px 0}
-  .contact{font-family:var(--mono);font-size:14px}
-  footer{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);
-    font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;
-    color:var(--muted);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:56px 24px 80px}
+  .brand{font-size:14px;font-weight:600;color:var(--muted);margin-bottom:20px}
+  h1{font-size:32px;font-weight:700;letter-spacing:-0.5px;line-height:1.2}
+  .updated{font-size:14px;color:var(--muted);margin:8px 0 32px}
+  h2{font-size:18px;font-weight:600;margin:32px 0 8px}
+  p,li{font-size:15px;color:var(--ink2)}
+  p{margin-bottom:12px}
+  ul{margin:4px 0 12px 20px}
+  li{margin-bottom:6px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header>
-  <div class="brand"><div class="mark">C</div><b>CancelSubscriptions</b></div>
-  <h1>Terms of Service</h1>
-  <div class="updated">Last updated: 17 July 2026</div>
-</header>
+<div class="brand">CancelSubscriptions</div>
+<h1>Terms of Service</h1>
+<p class="updated">Last updated: 2 October 2026</p>
 
-<div class="lede">
-  <p><b>Read this one bit if nothing else:</b> the app does not cancel anything for you. It takes you
-  to the service's own cancellation page — you complete the cancellation there. Always confirm with
-  the service itself that a cancellation went through.</p>
-</div>
+<p>These Terms of Service govern your use of the CancelSubscriptions app for iOS and Android ("the app", "we" or "us"). By downloading or using the app, you agree to these Terms.</p>
 
-<p>These terms are the agreement between you and CancelSubscriptions ("the app", "we") covering the
-iOS and Android apps. By installing or using the app, you accept them. If you don't, please don't
-use the app.</p>
+<h2>1. The service</h2>
+<p>The app helps you track your subscriptions, view your spending, receive renewal reminders and find cancellation pages. It relies on the information you enter and does not access your bank, email or purchase history. Prices shown in the app are estimates and may differ from what you are charged.</p>
 
-<h2><span class="n">01</span>What the app is</h2>
-<p>CancelSubscriptions is a <strong>personal tracker</strong>. You tell it what you subscribe to; it
-adds the numbers up, reminds you before renewals and trials, and points you at the right cancellation
-page. That's the whole product.</p>
-<p>It works from <strong>the data you enter</strong>. It does not read your bank, your email, your
-receipts or your app-store purchases, and it cannot discover subscriptions you don't tell it about.
-Prices shown for known services are <strong>suggested defaults</strong> to save typing — they are not
-quotes, and your real price may differ.</p>
+<h2>2. Cancellations</h2>
+<p>The app does not cancel subscriptions on your behalf. Cancellation links open the provider's own website, where you complete the cancellation. We are not affiliated with these providers and are not responsible for their services, billing or refunds. Marking a subscription as cancelled in the app does not cancel it with the provider. Please confirm any cancellation directly with the provider.</p>
 
-<h2><span class="n">02</span>The app does not cancel for you</h2>
-<p>This deserves its own section because the app's name invites the opposite assumption.</p>
+<h2>3. Your responsibilities</h2>
 <ul>
-  <li>Tapping a cancel option <strong>opens the service's own page</strong> in your browser. You complete the cancellation there, on their site, under their rules.</li>
-  <li>We have <strong>no relationship with, and no authority over,</strong> Netflix, Spotify, Adobe or any other service. We can't cancel on your behalf, chase a refund, or make them honour anything.</li>
-  <li>Cancellation links can go stale when services redesign their sites. If a link is wrong, tell us — but <strong>always verify with the service</strong> that you are actually cancelled.</li>
-  <li>Marking something "cancelled" in the app <strong>changes only the app</strong>. It does not stop a real charge.</li>
+  <li>You are responsible for the accuracy of the information you enter.</li>
+  <li>Reminders depend on your device and notification settings and are not guaranteed.</li>
+  <li>Your data is stored only on your device. We recommend using the export feature to keep a backup.</li>
+  <li>You agree to use the app lawfully and not to misuse, disrupt or reverse engineer it.</li>
 </ul>
 
-<h2><span class="n">03</span>Your responsibility</h2>
-<ul>
-  <li><strong>Your data is yours to keep.</strong> It lives only on your device. If you delete the app, lose the phone, or the device fails, it is gone and we cannot recover it — we never had a copy. Use <em>You → Export my data</em> for backups.</li>
-  <li><strong>Accuracy is yours.</strong> Totals, reminders and savings are only as right as what you entered.</li>
-  <li><strong>Reminders are a convenience, not a guarantee.</strong> They are scheduled by your phone and can be delayed or dropped by the operating system, battery saving, or a disabled notification permission. Do not rely on them as your only defence against a charge.</li>
-  <li>Use the app lawfully, and don't try to break, reverse engineer or misuse it.</li>
-</ul>
+<h2>4. No financial advice</h2>
+<p>The app provides information based on the data you enter. It does not provide financial, legal or tax advice.</p>
 
-<h2><span class="n">04</span>Not financial advice</h2>
-<p>The app displays arithmetic on numbers you supply. Nothing in it is financial, budgeting, tax or
-legal advice, and no output is a recommendation to buy, keep or cancel anything. Decisions about your
-money are yours.</p>
+<h2>5. Purchases</h2>
+<p>Any paid features are purchased through the Apple App Store or Google Play and are subject to their terms. Subscriptions renew automatically unless cancelled in your store account settings. Refunds are handled by Apple or Google in line with their policies.</p>
 
-<h2><span class="n">05</span>Paid features</h2>
-<p>If the app offers optional paid features, they are sold and billed through <strong>Apple's App
-Store or Google Play</strong>, under those stores' terms — not by us directly. Subscriptions renew
-until cancelled in your store account; the app cannot cancel them for you. Refunds are handled by
-Apple or Google under their policies. Prices and what's included may change, with notice for existing
-subscribers where the stores require it.</p>
+<h2>6. Privacy</h2>
+<p>Your use of the app is also governed by our <a href="privacy-policy.html">Privacy Policy</a>.</p>
 
-<h2><span class="n">06</span>Privacy</h2>
-<p>How data is handled is set out in the <a href="privacy-policy.html">Privacy Policy</a>, which forms
-part of these terms. In short: your subscriptions never leave your phone; only anonymous usage and
-crash data is collected.</p>
+<h2>7. Intellectual property</h2>
+<p>The app and its content are owned by us and protected by intellectual property laws. We grant you a personal, non-exclusive, non-transferable licence to use the app. Third-party names and logos belong to their respective owners and do not imply any affiliation or endorsement.</p>
 
-<h2><span class="n">07</span>Intellectual property</h2>
-<p>The app, its design, and its content are ours and are protected by copyright. You get a personal,
-non-exclusive, non-transferable licence to use the app. Service names and logos shown in the app are
-the trademarks of their owners, used only to identify those services — their presence does not imply
-any partnership, sponsorship or endorsement.</p>
+<h2>8. Disclaimer</h2>
+<p>The app is provided "as is" and "as available", without warranties of any kind, to the extent permitted by law. We do not guarantee that the app will be uninterrupted or error-free.</p>
 
-<h2><span class="n">08</span>Availability</h2>
-<p>The app is provided <strong>"as is" and "as available"</strong>, without warranties of any kind to
-the fullest extent the law allows. We don't promise it will be uninterrupted or error-free, and we
-may change or discontinue features.</p>
+<h2>9. Limitation of liability</h2>
+<p>To the extent permitted by law, we are not liable for any indirect, incidental or consequential damages, or for charges arising from missed reminders, incomplete cancellations or inaccurate information in the app. Our total liability is limited to the amount you paid for the app in the twelve months before the claim. Nothing in these Terms limits rights you have under applicable consumer law.</p>
 
-<h2><span class="n">09</span>Limitation of liability</h2>
-<p>To the fullest extent permitted by law, we are not liable for indirect or consequential loss, or
-for <strong>a charge you were billed because a reminder didn't arrive, a cancellation didn't
-complete, or a price or date in the app was wrong</strong>. Our total liability is limited to what you
-paid us for the app in the twelve months before the claim.</p>
-<p>Some jurisdictions don't allow certain exclusions, so parts of this may not apply to you. Nothing
-here removes rights you have as a consumer that cannot be waived.</p>
+<h2>10. Changes</h2>
+<p>We may update these Terms or change or discontinue features of the app. The date at the top shows when these Terms were last updated. Continued use of the app after changes means you accept the updated Terms.</p>
 
-<h2><span class="n">10</span>Changes to these terms</h2>
-<p>We may update these terms; the "last updated" date will change. Continuing to use the app after an
-update means you accept the revised terms.</p>
-
-<h2><span class="n">11</span>Contact</h2>
-<div class="card">
-  <p class="contact"><a href="mailto:umairkhalidsidd@gmail.com">umairkhalidsidd@gmail.com</a></p>
-</div>
+<h2>11. Contact</h2>
+<p>For questions about these Terms, contact us at <a href="mailto:umairkhalidsidd@gmail.com">umairkhalidsidd@gmail.com</a>.</p>
 
 <footer>
-  <span>© 2026 CancelSubscriptions</span>
-  <span><a href="privacy-policy.html">Privacy Policy</a></span>
+  <span>&copy; 2026 CancelSubscriptions</span>
+  <a href="privacy-policy.html">Privacy Policy</a>
 </footer>
 
 </div>
