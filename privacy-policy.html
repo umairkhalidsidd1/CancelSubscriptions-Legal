@@ -37,7 +37,7 @@
 
 <h2>1. Summary</h2>
 <ul>
-  <li>Your subscription data is stored on your device, and in your own phone backup if you use one. We never receive it.</li>
+  <li>Your subscription data is stored on your device, and in your own phone backup if you use one. If you turn on sync, a copy is also kept in your own iCloud or Google Drive. We never receive it.</li>
   <li>The app does not require an account and does not connect to your bank or payment accounts.</li>
   <li>We collect limited, anonymous usage and crash data to maintain and improve the app.</li>
   <li>We do not sell your data.</li>
@@ -46,6 +46,10 @@
 <h2>2. Information stored on your device</h2>
 <p>The subscription details you enter, such as service names, prices, billing cycles, renewal dates, budgets and notes, are stored locally on your device. This information is not sent to us or to any third party.</p>
 <p>If iCloud Backup or Google backup is turned on for your phone, your phone includes this data in your own backup, so it comes back when you restore your phone or move to a new one. That backup is kept in your Apple or Google account under their terms; we have no access to it.</p>
+<p>A payment method you add is only a name you choose, its type and, if you want, the last 4 digits of a card. The app never asks for or stores a full card number.</p>
+
+<h2>2a. Sync between your devices (optional)</h2>
+<p>Sync is off until you turn it on in You. When it is on, the app keeps one copy of your subscriptions, categories, tags, payment methods and settings in your own cloud storage, so your other devices show the same: on iPhone and iPad in your iCloud account (iCloud key-value storage), on Android in your Google Drive, in a hidden app folder that only this app can see. On Android the app asks Google for access to that app folder only (the drive.appdata permission); it cannot see any other file in your Drive. This copy is stored by Apple or Google under their terms. We do not operate a server for it and we never receive it. When you turn sync off, the app stops sending or reading the copy and offers to delete it. On Android you can also delete it in Google Drive's settings (Manage apps). If another of your devices still has sync on, it keeps its own copy and will upload it again.</p>
 
 <h2>3. Information we collect</h2>
 <p><strong>Usage data.</strong> We use Google Firebase Analytics to collect anonymous usage information, such as screens viewed, whether onboarding was completed, the number of services selected, device model, operating system version, language, country and a randomly generated app instance identifier. This data does not include your subscription details.</p>
@@ -54,14 +58,17 @@
 <h2>4. How we use information</h2>
 <p>We use this information to understand how the app is used, to diagnose and fix problems, and to improve the app.</p>
 
-<h2>5. Notifications</h2>
+<h2>5. Notifications and calendar</h2>
 <p>Renewal and trial reminders are scheduled locally on your device. Reminder information is not sent to a server.</p>
+<p>If you turn on Renewals in Calendar, the app asks for access to your calendar and adds its own calendar ("Subscriptions") with your coming renewals, trial ends and cancel-by dates. It does not read or change your other calendars. Turning it off deletes that calendar. If your phone syncs its calendars to an account (such as iCloud or Google), that calendar is synced with them under that account's terms.</p>
 
-<h2>6. Price data</h2>
+<h2>6. Price data and exchange rates</h2>
 <p>The app periodically downloads a public list of typical subscription prices. This request does not include personal information or your subscription data. As with any internet request, your IP address is visible to the server; we do not store or use it.</p>
+<p>To show totals in one currency, the app downloads public daily exchange rates (from the open exchange-api project, through the jsDelivr and Cloudflare Pages networks) at most twice a day. The request contains no personal information and no subscription data.</p>
 
 <h2>7. Third-party services</h2>
 <p>Anonymous usage and crash data is processed by Google Firebase. See the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+<p>If you turn on sync, your sync copy is stored by Apple (iCloud) or Google (Google Drive) in your own account. Exchange rates are served by jsDelivr and Cloudflare.</p>
 <p>When you open a cancellation or service link, you leave the app and the privacy policy of that service applies.</p>
 
 <h2>8. Data sharing</h2>
